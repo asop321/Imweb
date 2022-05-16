@@ -48,14 +48,6 @@ const navtab = {
 $(document).ready(function () { navtab.init(); })
 
 
-// 모달팝업 중 html,body의 scroll을 hidden시킴
-$('html, body').css({'overflow': 'hidden', 'height': '100%'}); 
-
-
-//scroll hidden 해제
-$('html, body').css({'overflow': 'auto', 'height': '100%'}); 
-
-
 
 /* 탑버튼 */
 

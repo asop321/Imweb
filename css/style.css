@@ -73,9 +73,13 @@ body.dark-theme {
 .main .container .content_box .content_box_inner {
   padding: 20px;
 }
+.main .container .content_box .content_box_inner .img_box{
+  height: 170px;
+  overflow: hidden;
+
+}
 .main .container .content_box .content_box_inner img {
   width: 100%;
-  height: 170px;
 }
 .main .title {
   margin-top: 10px;
@@ -97,8 +101,8 @@ body.dark-theme {
   background: rgba(0, 0, 0, 0.8);
   display: none;
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
 }
