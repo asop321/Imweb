@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* 다크모드 */
+
+body.dark-theme {
+  background: rgba(0, 0, 0, 0.8);
+}
+#wrap {
+  width: 100%;
+}
+
+.header .hamburger{
+  display: none;
+}
+/* 상단 메뉴 */
+.header {
+  position: fixed;
+  width: 100%;
+  background: #007aff;
+  height: 75px;
+}
+.header .header_inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header .header_inner h1 a {
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  color: #fff;
+  font-family: 'GmarketSansBold';
+  letter-spacing: 3px;
+}
+.header .header_inner .gnb ul {
+  margin-left: 40em;
+  font-size: 18px;
+  line-height: 38px;
+  width: 300px;
+}
+.header .header_inner .gnb ul li {
+  padding-right: 20px;
+}
+.header .header_inner .gnb ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn_toggle{
+  border-radius: 50%;
+  display: block;
+  text-indent: -999999999999em;
+  background: #fff;
+  padding: 17px 25px;
+  border: 0;
+  margin-top:-8px;
+}
+/* 메인컨텐츠 */
+.main .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20vh 0;
+}
+.main .container .content_box {
+  width: 27%;
+  height: 410px;
+  margin: 35px 0;
+  background: #fff;
+}
+.main .container .content_box_m{
+    margin: 35px 7em;
+}
+.main .container .content_box .content_box_inner {
+  padding: 20px;
+}
+.main .container .content_box .content_box_inner img {
+  width: 100%;
+  height: 170px;
+}
+.main .title {
+  margin-top: 10px;
+}
+.main .sub_title {
+  margin-top: 10px;
+}
+.main .container .content_box .content_box_inner .content_title {
+  margin-top: 10px;
+  height: 160px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  line-height: 20px;
+}
+/* 모달 */
+.modal_box {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal_inner {
+  width: 50%;
+  height: 55%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 모달 가운데 맞춤 */
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+.modal_inner .left img {
+    width: 22vw;
+    height: 55vh;
+}
+.modal_inner .right {
+  margin: 20px 0 0 50px;
+}
+
+.modal_inner .close {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.modal_inner .close:before,
+.modal_inner .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 40px;
+  width: 2px;
+  background-color: #000;
+}
+.modal_inner .close:before {
+  transform: rotate(45deg);
+}
+.modal_inner .close:after {
+  transform: rotate(-45deg);
+}
+
+/* 탑버튼 */
+#toTop {
+  position: fixed;
+  bottom: 100px;
+  z-index: 9999;
+  background-color: #007aff;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  right: 12%;
+}

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  #wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header{
+      height: 50px;
+  }
+  .header .header_inner {
+    padding: 0;
+}
+  .header_inner > * {
+    display: none;
+  }
+  .header .hamburger{
+    display: block;
+  }
+  /* 메인컨텐츠 */
+  .main .container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 4vh 0;
+  }
+  .main .container .content_box {
+    width: 222px !important;
+    height: 222px !important;
+    margin: 5em 0 0;
+  }
+  .main .container .content_box:first-child {
+    margin-right: 2em;
+  }
+  .main .container .content_box:nth-child(3) {
+    margin-right: 2em;
+  }
+  .main .container .content_box:nth-child(5) {
+    margin-right: 2em;
+  }
+  .main .container .content_box .content_box_inner .content_title {
+    margin-top: 10px;
+    height: 39px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+  }
+  .main .container .content_box .content_box_inner img {
+    width: 100%;
+    height: 100px;
+  }
+  /* 모달 */
+  .main .modal_box .modal_inner {
+    width: 70%;
+    height: 80%;
+    top: 50%;
+  }
+  .main .modal_box .modal_inner .left {
+    width: 100% !important;
+  }
+  .main .modal_box .modal_inner .left img {
+    width: 100%;
+    height: 35vh;
+    margin-top: 40px;
+  }
+  .modal_inner .close {
+    top: -52%;
+  }
+  .modal_inner .right {
+    margin: 20px 0 0 0px;
+  }
+  .m_btn{
+      display: block;
+      width: 50px;
+  }
+  .m_btn a {
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+    background: url('../img/menu.png') no-repeat;
+    background-size: 50px 50px;
+  }
+  .m_nav {
+    z-index: 2;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  .m_nav.on {
+    left: 0;
+  }
+  .bg_shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    cursor: pointer;
+  }
+  .sub {
+    position: relative;
+    padding-top: 30px;
+  }
+  .close_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  .close_btn a {
+    display: block;
+    text-indent: -9999px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/close.png') no-repeat;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+  .sub li a {
+    display: block;
+    font-size: 1.4rem;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  #toTop{
+      right:2%;
+  }
+}
